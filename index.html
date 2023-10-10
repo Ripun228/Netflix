@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-Clone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+</head>
+
+<body>
+
+    <div class="grid">
+        <!--Nav Section-->
+        <nav>
+            <img src="assets/logo.svg" alt="logo" width="90" height="98">
+            <div class="flex flex-space-between">
+                <ul>
+                    <li>Home</li>
+                    <li>TV Shows</li>
+                    <li>Movies</li>
+                    <li>New & Popular</li>
+                    <li>My List</li>
+                    <li>Browse by Languages</li>
+                </ul>
+                <ul>
+                    <img src="assets/search.svg" alt="" width="28">
+                    <li>Children</li>
+                    <img src="assets/notification.svg" alt="" width="28">
+                    <div class="drop-down"></div>
+                </ul>
+            </div>
+        </nav>
+        <!--Hero Section-->
+        <div class="hero-section">
+            <section class="hero-section-wrapper">
+                <div class="hero-dull-bg"></div>
+                <div class="hero-details">
+                    <img src="https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABfosR4jkpuS_hwwWCWGJVR-DER8wC67zrdjNdn-C4qDuAwvtwVqUImszt5bCCWewsEIMAM9bn2F6suQX-iea7oiNL3SAd356IKqVNK2lFdDT.png?r=e2f" alt="info-logo" width="500">
+                    <p class="info-sec">Catastrophe looms as dinosaurs live among humans in a volatile world, and heroes-both old and new-unite once more for a thrilling adventure</p>
+                    <section class="flex g-15 flex-start">
+                        <button class="play-btn"><img src="assets/play.svg" width="35">Play</button>
+                        <button class="info-btn"><img src="assets/info.svg" width="30">More Info</button>
+                    </section>
+                </div>
+            </section>
+        </div>
+        <div>
+            <!-- Top Searches -->
+            <div class="splide slider1">
+                <div class="splide__track">
+                    <div class="splide__list">
+                        <div class="splide__slide">
+                            <div class="img_box">
+                                <img src="https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABcpbrL3KPAIrD6rcyv-nj4RlkiNTpNsyleCisXevetbIBbw_m48rnKVwNjp3Ymw5959TXHlfhp20Q45j04U9nzk-2G7pgmWG4AkTPqjsnMKTJ9qx8QCoHr_ufUwqC5CC2W3jK1hI3GjunNMMS-6dv8DGvTgIZKIChi2gSOJv8sPVnT55XDwPQuLEg7MXBWIK4oGZ3Ez7YaZB9citKTOrdMGlEB31_0tm9XvE2hqGqJpkiWye43ID0g3VtJQKKDU33wRWtd9ZLfV45HcVHf37b5szUlacW56l4J-3SVlq6vh7SQm0IOkmdtVljMoiV-M7pcn5ReNZ4ZVE8Sp-YbQ8xXg.jpg?r=409"
+                                    alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="img_box">
+                                <img src="https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRWufBPprI9VdMEWNQPf3jN9XX3_FctDFNgSAy2ZPGVvMZ48fPuMbbHBYoYcn-kh9HqFmgmIJBiO2YG9q2QmoNnrygFHKSvQC7tl9BHXmLUJfExX4IfpPTbFqwPEWa3WhvaPBdIP3DTUTsmnRWfx21QqeNTpFO9Ztig-U9Df7mhPl43kzPkemjvuS05PO40mCaScv0hEyAZSB0Vt5aw-DAg15smp_3heCC9Uppm9nvvI7h6E3i7XdMze1ivwt40O6eRSx2G1rMFSfdUfZk9-lC7F-f_SWL_yiSvfPWa7mDipMpwMPuH8BWhTck3Jze2ff6kCSKpckv73l_E8zC2o8Ms.jpg?r=b5c"
+                                    alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABe0IrieWq25SZJk8P2uOtRACz5lPXyAO9k3T1IpA9BZl31Je7bsO-6YgVFvRNUtNlxhJtwv_bdHjwETFlMuoFo472nKLK_qsE9cPrsl4wIKucsf1i3hSo04swG6Sv-ZCnQa8giyXduLdvke9ik7lH7hnoE_3TNdM3YYtHbvUOHMlsvgOUn8viYZ5O7ohXLGBR0A106zUBIzRwP5CjhMPPkS-PnlQCW3EN0i9V6pfL1ta-jORvqj3Ab3bmx9eZL5HJMs8CeJM6Dg6v0cIvn5kvarZZ0UPfa3aKSrpW5gVhtVxsav9yyYlKWWihKgMfbWNatSjpZhbVc9QspJINs7a-4lSz4ruhM06pn0lFmQ6sybSagKtogA.jpg?r=364"
+                                    alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide">
+                            <div class="img_box">
+                                <img src="https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbd8ixrH3x5Tx3iX0YX3GRg67KcwRbZzpwduzulxOKk5N6mIW1_uWWxyiSR4NFJBOUHyrhQvCSqZONvfj2EWi4GsuJIcE2FcOBp6mXNboCV8BQjQynJyLUZEzCOLO33xz5WYhSZlH-R_Ns7GEKNGly-tDvFkGZQxMtw8gWbVlHHZgBoG9b46gpBEXguu_pCge_duRJBOHw1LdxHUL2NpaFpmwg9TRTEz9VZJhApWgtAM9PcK9A7wI-Fh66CCZ58oz5bmaLAwhEYAQvbbdSIDcnugdvmg.jpg?r=41e"
+                                    alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUk8ZPXSYS9Paj-VDWBbvauCwAIpNJre8fPLjWPEhQ7mLVxj1zcqo8Gg-k3lQTgMKZHBgxsbrQhyvDzhbJ0xwX-7GRPtMzpe-QB9FFGthRwMSZjakQ-_cleRLaAl6hGbPsYu14c0HtkpsFC78MZEFXftHtpYsV_g0EhEBoVeRwbMLnCtaSkacbPc9X52RdulBTos2zske9-9q6LQmJDh6cxMCMxqOdtH-T7CkjqbAOFmTiAdPTKO5ehQGAtnreZ_G3YCJUPm5jfLM7g7E6Q41IlZW673Qtp8d8aj3nUI37XVGGfR3ar885cMJjNRxAtpwCoH2zs9xikLot_pIfHaSe-3u49jWdhhGzSGPN9nIv9WRn8udoc.jpg?r=4f8"
+                                    alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src=https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZBfQmG7ZdxLak5vuUnbaBGHI1vztog_iSqNlwHVZm9f_X1Q_uhX_aMM3TsHEeZuRUVaJlTJ2RcO0SVGkCO_sz5Ecwpu5z-rB6Pb9pvxPHAIqzyLnz28UzbH-q_mTfdsndgy4LSewGkXQjN5p5FBwEb8q-Alw0umVnCjvyTSMCUzmYiHcYeukWOuE7qzCas.jpg?r=a95
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABUfC1FDGpdl73OpQ8BFlOpbmZ8fdJ7pI26etLT_Po7EOP19bEA_uRG9GFKYcZFdF4LBnvKt5ufplzuDwFrysqvPt4Uh6SaHVr7rBW1eJ9ieLjg4EeewVpp3gX7u4KkhqrX3YVyNlD8DHG2rAHXnv80MF32Ik7hSaqjrwwyYwJ5xsdVp6RvXbJcIhs_aVyB2GHgR4kfgFYzeVnP9V0qmil-otH3r8YPjKh0d67tXswVSTvvnH2Ig-U5IIDFxZRQMaSsZ5pkr7eHUImQM00v4xpFH3eEx_.jpg?r=7ac
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="trending-now ">
+            <!--Trending Now-->
+            <div class="splide slider2 ">
+                <div class="splide__track ">
+                    <div class="splide__list ">
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeN_FBGf1joijt38_2cw3YOhKbFrBhxQopRDt9QzttQKYutKP6sG2MedV6lb9bfiUWXb0dXLSTX3-Vg5juWnyjYrt4j7ive7DmWyn58QEArIFKtLdYTQlZleNXhG3eixRWW-.jpg?r=f93
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-2590-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABY0uT7ROSEYjH374PKCEQPI95CQC4qe4R3NVb4-mxkM2VmpLu6BNfIgzTSQptZAym3jW2EddqUUe-x6-JzwJJUYNhJGtKl9SbwNfq-o6gXtkjJwYBOmJvM2lfxgduIfgaRbgup_YoQNvOJBZYZb4SDx0eSW6uJikxUcEhNeQYFlbTAhY2NFQ4Q_z_gRRCqFd-GDLDC0AyUW0xgkJvkZcyyMu6COaoLepq-467z3iFjJR6PVo9Vq6wVz0dTHQc06JW6ToD62CpeMr_aRgLPdi983CEu0GAGFJv37HUcxtRF_NcxZZf_Z_pBLJ7cTsL_zWaqtUkyCc3etXxDFJHT5JWK4.jpg?r=93d "
+                                    alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-2590-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbzBukwj-wl3qePSdFwS-Nwy6BGO7tIdqQ0oFSWYKqpdhrmIcLeD0CYnBd81oVLyS7eu5sROjfsOCmJmxso3w8xcqDcCdNitNN6nUpm2nLIKIbB7PUAsftFJnfhUpQk0tEi0.jpg?r=8a4
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-2590-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABb26Sz_ARV6G1OdUhrqZgPtBXWCrHGwZMLZrfyQTqVpAf5UpF98_v9TfCG5QlS9oCSRbHvNOEfE42sV3ADfQc7RSoQeh_Npks3UwFDYuBxKIVCCA4oHDiNj_M4Thi8Qk0uZg.jpg?r=ad9
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-2590-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABTe_e7tvJB_SeLgXaqBzxS3hQYfhjrjsj2ieitqKBuYQW0YsFxOLC1o4vr7NT0MRjx4RTPa5QMCyAkdU1h_nFdxrEmje9rs7jVqVYKyWdMxnuZFJkIgqqMMnmvpcOsQsnqZN.jpg?r=587
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-2590-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVVBefzzb0fZRln5fGdbTRgA36U6DGx_DREST_G13nc_wthS0FNli_QP-4VGIYiA5mUG2eHkpW3oy40Xnla9LBrejki0Dtx_LNx7-W_cxCgoV3nxqPCkuhelZNT__Oflm2Ae.jpg?r=31e
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="korean ">
+            <!--Korean Movies & TV Dubbed in Hindi-->
+            <div class="splide slider3 ">
+                <div class="splide__track ">
+                    <div class="splide__list ">
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfLM9fU-tgKHjOzXTr-HjWSAEzqKgm3b8hVBOhhy8xguMEnqyLiITVzeCpZV49P-CpnopYuUaxY2bpBDbyccXno8fDjXnuhlv-EEsnR8o3ow2Rm8SfChBpiMiSNC783mDdjc.jpg?r=e90
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWFHZfUXvttkXquHJqXo2jymXs8RE6TqlJBc0fcDT4k_5ydLnD_fxU-xcrZs2kPxHqQSt9y-bBDU8lMek7xSG7ikbXFBNPYmavE.jpg?r=471 " alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABeZZUaP6Pvahe-eM3w_wMytntYnO7prZZtM0NuKsbne77zGmEflYF2xvlZj2Xm7tvdMzKCM1JLIXBfuuqGBT3Jf5zg7IutRI6So_doN_eNSkE_9scjCTOC4MhaGlms-oUJwM.jpg?r=3d2
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-2590-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRtesDNl6Q2JsMQbg-B3QPBwLBKAJ82EqOsy6x8GmQGyL_MHD0lFNECf_zUp1qQuCwcdCOLy0H7LrFzjas9OKYRTstBpNeIMB6BVR93_drg4mEwyKpKzoyd0gizEVnjX-Ti1.jpg?r=c62
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-2590-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSF4u-vpuO-2FoHxs0zVjVx_X62dKDKm5QBaWeZmC0Ay5gJU9lf3E8N7gZESMJ_RZ9MovclY2gy3eqV3PSYoQ68YdrRL6HMJz7u9f4L_5HkGwGv2PFFA2feJAbCHNcQ6VkR4.jpg?r=74c
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                        <div class="splide__slide ">
+                            <div class="img_box ">
+                                <img src="https://occ-0-2590-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYPDv_chQrgiWAFMnlWmIVbQrFEppuw1wdwMAkXgJmyusRmz5AKtIyvW8n3DL_nexN4cPlEFfAeUtfLjKKpCow-vYytXnlPKXpRp_CHG-oEPkvU51gX0RPfEBz-bhRc1ZFEy.jpg?r=3ba
+                                    " alt="slider-img ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Footer Section-->
+    <footer class="grid ">
+        <div class="flex media-logos ">
+            <img src="assets/facebook.svg " alt=" " width="27 ">
+            <img src="assets/instagram.svg " alt=" " width="27 ">
+            <img src="assets/twitter.svg " alt=" " width="27 ">
+            <img src="assets/youtube.svg " alt=" " width="27 ">
+        </div>
+        <div class="flex flex-space-around links-div ">
+            <section class="grid ">
+                <div class="flex flex-start justify-start "><a href="/ ">Audio Description</a></div>
+                <div class="flex flex-start justify-start "><a href="/ ">Investor Relations</a></div>
+                <div class="flex flex-start justify-start "><a href="/ ">Legal Notices</a></div>
+            </section>
+            <section class="grid ">
+                <div class="flex flex-start justify-start "><a href="/ ">Help Center</a></div>
+                <div class="flex flex-start justify-start "><a href="/ ">Jobs</a></div>
+                <div class="flex flex-start justify-start "><a href="/ ">Cookies Preferences</a></div>
+            </section>
+            <section class="grid ">
+                <div class="flex flex-start justify-start "><a href="/ ">Gift Card</a></div>
+                <div class="flex flex-start justify-start "><a href="/ ">Terms of Use</a></div>
+                <div class="flex flex-start justify-start "><a href="/ ">Corporate Information</a></div>
+            </section>
+            <section class="grid ">
+                <div class="flex flex-start justify-start "><a href="/ ">Media Center</a></div>
+                <div class="flex flex-start justify-start "><a href="/ ">Privacy</a></div>
+                <div class="flex flex-start justify-start "><a href="/ ">Contact Us</a></div>
+            </section>
+        </div>
+        <div class="grid flex-start btn-and-right-sec ">
+            <div class="flex flex-start justify-start "><button class="flex footer-btn ">Service Code</button>
+            </div>
+            <div class="flex flex-start justify-start ">
+                <p class="copyright ">&#169 1997-2023 Netflix,Inc.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js "></script>
+<script>
+    var splide = new Splide('.splide', {
+        pagination: false,
+        perPage: 5,
+        gap: '21.78rem',
+        breakpoints: {
+            640: {
+                perPage: 2,
+                gap: '.7rem',
+                height: '6rem',
+            },
+            480: {
+                perPage: 1,
+                gap: '.7rem',
+                height: '6rem',
+            },
+        },
+    });
+
+    splide.mount();
+    var slider2 = new Splide('.slider2', {
+        pagination: false,
+        perPage: 5,
+        gap: '21.78rem',
+        breakpoints: {
+            640: {
+                perPage: 2,
+                gap: '.7rem',
+                height: '6rem',
+            },
+            480: {
+                perPage: 1,
+                gap: '.7rem',
+                height: '6rem',
+            },
+        },
+    });
+
+    slider2.mount();
+    var slider3 = new Splide('.slider3', {
+        pagination: false,
+        perPage: 5,
+        gap: '21.78rem',
+        breakpoints: {
+            640: {
+                perPage: 2,
+                gap: '.7rem',
+                height: '6rem',
+            },
+            480: {
+                perPage: 1,
+                gap: '.7rem',
+                height: '6rem',
+            },
+        },
+    });
+
+    slider3.mount();
+    // const noMove = document.
+    setInterval(() => {
+        const yScroll = window.scrollY;
+        if (yScroll == 0) {
+            document.querySelector("nav ").style.background = "linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent) "
+        } else {
+            document.querySelector("nav ").style.background = "#141414 "
+        }
+    }, 200)
+</script>
+
+</html>

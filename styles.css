@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #141414;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-15 {
+    gap: 15px;
+}
+
+.flex-start {
+    justify-self: start;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.flex-space-between {
+    width: 98vw;
+    justify-content: space-between;
+}
+
+.flex-space-around {
+    justify-content: space-around;
+}
+
+.grid {
+    display: grid;
+    place-items: center;
+}
+
+nav {
+    z-index: 9999;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    height: 70px;
+    width: 98.7vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 50px;
+    transition: all 0.4s;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .7) 10%, transparent);
+}
+
+nav img {
+    transform: translate(7px, 0);
+}
+
+.hero-section {
+    position: relative;
+    top: -10vw;
+    background-color: black;
+}
+
+.hero-dull-bg {
+    position: absolute;
+    top: 0;
+    height: 109vh;
+    width: 70vw;
+    background: linear-gradient(77deg, rgba(0, 0, 0, 1), transparent 85%);
+}
+
+.hero-section-wrapper {
+    background-image: url("https://occ-0-4773-2164.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABe1iZK9Q_MAdVEN0ojyfMdV2v8GFHSi_Z0s_0lk_PoQf1hAMSOQVu7_IPJLaIKkUBlTCYxgEl5Ned4svQffncvukgBrd5pWNswAA.jpg?r=c3b");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity .4s cubic-bezier(.665, .235, .265, .8) 0s;
+    height: 109vh;
+    width: 98.7vw;
+    filter: brightness(1.03);
+}
+
+ul {
+    transform: translateY(-2px);
+    margin-left: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: 14px;
+}
+
+ul li {
+    cursor: pointer;
+    color: #e5e5e5;
+    list-style: none;
+    margin-left: 10px;
+}
+
+ul li:hover {
+    transition: all 0.4s;
+    color: gray;
+}
+
+ul li:nth-child(1) {
+    cursor: default;
+    color: white;
+}
+
+svg {
+    color: white;
+    font-size: 30px;
+}
+
+.drop-down {
+    margin-left: 10px;
+    background: url("https://th.bing.com/th/id/OIP.XQ-com-ULw7aaf_U3BcQ3AHaHa?pid=ImgDet&rs=1");
+    background-size: contain;
+    height: 40px;
+    width: 35px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.drop-down::after {
+    content: " ▼ ";
+    position: relative;
+    left: 40px;
+    top: 10px;
+    color: white;
+    font-size: 10px;
+    font-family: sans-serif;
+    transition: all 0.4s;
+}
+
+.hero-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-28%, 10vw) scale(0.97);
+}
+
+.info-sec {
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: .8vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .45);
+    width: 500px;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+
+button {
+    margin-top: 15px;
+    align-items: center;
+    appearance: none;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    padding: 0.2rem 1.4rem;
+    position: relative;
+    right: 85px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.play-btn {
+    background-color: white;
+    color: black;
+}
+
+.info-btn {
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0.4rem 1rem;
+    background-color: #6d6d6eb3;
+    color: white;
+}
+
+.play-btn:hover {
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+.info-btn:hover {
+    background-color: #6d6d6e8c;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+footer a {
+    color: gray;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin: 8px 60px 8px 0;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.links-div {
+    margin-right: 60px;
+    width: 75vw;
+}
+
+.footer-btn {
+    margin-bottom: 15px;
+    position: static;
+    padding: .5rem;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: sans-serif;
+    border-radius: 0;
+    border: 0.7px solid gray;
+    background-color: transparent;
+    color: gray;
+}
+
+.footer-btn:hover {
+    color: white;
+}
+
+.copyright {
+    color: gray;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.btn-and-right-sec {
+    justify-self: center;
+    width: 73vw;
+}
+
+.media-logos {
+    cursor: pointer;
+    justify-self: start;
+    margin-left: 170px;
+    margin-bottom: 5px;
+}
+
+.media-logos img {
+    margin-left: 5px;
+}
+
+.splide {
+    width: 98vw;
+}
+
+.splide::before {
+    content: "";
+    position: relative;
+    top: -10px;
+    left: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: white;
+}
+
+.slider1 {
+    transform: translateY(-140px);
+}
+
+.slider1::before {
+    content: "Top Searches";
+}
+
+.trending-now>.splide {
+    transform: translateY(-70px);
+    visibility: visible;
+}
+
+.slider2::before {
+    content: "Trending Now";
+}
+
+.korean>.splide {
+    /* transform: translateY(-70px); */
+    visibility: visible;
+}
+
+.slider3::before {
+    content: "Korean Movies & TV Dubbed in Hindi";
+}
